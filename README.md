@@ -32,7 +32,7 @@ In libIGL they use a set of standard quaternions based on the orientation of the
 
 This would deliver the following algorithm for implementation:
 
-1. Determine all canonical quaternions \[\mathbf{H_c} \subset \mathbf{H}\] by taking the set of orthogonals on the XY plane, the XZ plane and the YZ plane.
+1. Determine all canonical quaternions \[ \mathbf{H_c} \subset \mathbf{H} \] by taking the set of orthogonals on the XY plane, the XZ plane and the YZ plane.
 2. Determine all possible quaterninons $\mathbf{H_{h}}$ which have a 45 degree angle with an element in $\mathbf{H_c}$.
 3. Generate images for each $h \in \mathbf{H_c} \cup \mathbf{H_h}$, and tag those images using your favourite image tagging implementation.
 4. Select the image with the highest likelihood, for it's tags as the best camera perspective.
